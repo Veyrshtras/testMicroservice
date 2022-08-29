@@ -1,0 +1,9 @@
+
+security:
+  oauth2:
+    client:
+      client-id: web
+      client-secret: admin
+    resource:
+      token-info-uri: http://localhost:8083/oauth/check_token
+

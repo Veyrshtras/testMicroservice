@@ -1,0 +1,39 @@
+spring:
+  application:
+    name: gateway
+
+  cloud:
+    config:
+      uri: http://localhost:8888
+      fail-fast: true
+      password: 12345678
+      username: user
+
+
+#server:
+#  port: 8080
+#
+#
+#
+#
+#    gateway:
+#      routes:
+#      - id: demo1 # service nomini kiritiladi
+#        uri: http://localhost:8081 #service joylashgan adres
+#        predicates:
+#        - Path=/message, /get # mazkur joyda siz chaqiruvchi url ni korsatishingiz mumkin
+#      - id: demo2
+#        uri: http://localhost:8082
+#        predicates:
+#        - Path=/*
+
+
+#
+#security:
+#  oauth2:
+#    client:
+#      client-id: web
+#      client-secret: admin
+#    resource:
+#      user-info-uri: http://auth/user/me
+#      prefer-token-info: false

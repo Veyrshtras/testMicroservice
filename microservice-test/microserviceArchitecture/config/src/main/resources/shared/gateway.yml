@@ -1,0 +1,14 @@
+server:
+  port: 8080
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: demo1 # service nomini kiritiladi
+          uri: http://localhost:8081 #service joylashgan adres
+          predicates:
+            - Path=/message, /get # mazkur joyda siz chaqiruvchi url ni korsatishingiz mumkin
+        - id: demo2
+          uri: http://localhost:8082
+          predicates:
+            - Path=/*

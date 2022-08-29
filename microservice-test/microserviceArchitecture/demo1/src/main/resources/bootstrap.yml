@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: demo1
+  cloud:
+    config:
+      uri: http://localhost:8888
+      fail-fast: true
+      password: 12345678
+      username: user
+#server:
+#  port: 8081
+#
+#security:
+#  oauth2:
+#    client:
+#      client-id: web
+#      client-secret: admin
+#    resource:
+#      token-info-uri: http://localhost:8083/oauth/check_token
+##      user-info-uri: http://localhost:8083/user/me
+##      prefer-token-info: false
